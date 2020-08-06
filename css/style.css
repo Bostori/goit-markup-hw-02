@@ -1,3 +1,5 @@
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
 :root {
 	--accent-color: #2196f3;
 	--main-color: #757575;
@@ -8,6 +10,7 @@
 
 body {
 	font-family: "Roboto", sans-serif;
+	font-style: normal;
 	font-size: 14px;
 	line-height: 1.72;
 	letter-spacing: 0.03em;
@@ -18,23 +21,9 @@ body {
 span {
 	color: var(--accent-color);
 }
+
 ul {
 	list-style: none;
-}
-
-.title {
-	display: none;
-}
-
-.page-title {
-	font-weight: 900;
-	font-size: 24px;
-	line-height: 1.75;
-	letter-spacing: 0.06em;
-	text-align: center;
-	text-transform: uppercase;
-	color: var(--adress-color);
-	background-color: #383434;
 }
 
 .logo {
@@ -42,31 +31,17 @@ ul {
 	font-weight: bold;
 	font-size: 26px;
 	line-height: 1.19;
-	letter-spacing: 0.03em;
+	letter-spacing: 0.02em;
 	text-decoration: none;
 	color: var(--logo-color);
 }
-/* основной цвет текста #212121 */
-/* вторичный цвет текста #757575 */
-/* акцент #2196F3 */
-/* черный #000000 */
 
-/* site nav */
-/* font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif; */
-
-.site-nav a {
-	color: var (--dark-color);
-	text-decoration: none;
+.list {
+	list-style: none;
 }
 
-.site-nav a:hover,
-.site-nav a:focus,
-.contacs-link:hover,
-.contacs-link:focus,
-.adress:hover,
-.adress:focus {
-	color: var(--accent-color);
+.text {
+	display: none;
 }
 
 .menu-link {
@@ -78,6 +53,20 @@ font-family: 'Roboto', sans-serif; */
 	text-decoration: none;
 }
 
+.menu-link:hover,
+.menu-link:focus,
+.contacs-link:hover,
+.contacs-link:focus,
+.adress:hover,
+.adress:focus {
+	color: var(--accent-color);
+}
+
+.button:hover,
+.button:focus {
+	color: var(--adress-color);
+	background-color: #2196f3;
+}
 .contacs-link,
 .btn {
 	font-weight: 500;
@@ -86,9 +75,37 @@ font-family: 'Roboto', sans-serif; */
 	letter-spacing: 0.02em;
 	color: rgba(255, 255, 255, 0.6);
 	text-decoration: none;
+	background-color: #c4c4c4;
+}
+
+.page-title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	letter-spacing: 0.06em;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--adress-color);
+}
+
+.hero {
+	background: #c4c4c4;
 }
 
 .btn {
+	background-color: transparent;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.875;
+	display: flex;
+	text-decoration: none;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+	color: var(--adress-color);
+}
+
+.button {
 	font-family: inherit;
 	font-style: normal;
 	font-weight: 500;
@@ -98,40 +115,31 @@ font-family: 'Roboto', sans-serif; */
 	letter-spacing: 0.03em;
 	color: var(--dark-color);
 }
-
-.btn:hover,
-.btn:focus {
-	color: var(--adress-color);
-	background-color: #2196f3;
-}
-
-.section-subtitle {
-	font-family: Roboto;
-	font-style: normal;
+.section-title {
 	font-weight: bold;
-	font-size: 18px;
-	line-height: 2;
-	letter-spacing: 0.06em;
+	font-size: 36px;
+	line-height: 1.66;
+	text-align: center;
+	letter-spacing: 0.03em;
 	color: var(--dark-color);
 }
 
-.section-description {
-	font-family: Roboto;
+.section-subtitle {
 	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 1.875;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.143;
 	letter-spacing: 0.03em;
-	color: #757575;
+	text-transform: uppercase;
+	color: var(--dark-color);
 }
 
-.adress {
+.section-descripcion {
+	font-weight: normal;
 	font-size: 14px;
-	line-height: 1.714;
+	line-height: 1.71;
 	letter-spacing: 0.03em;
-	color: var(--adress-color);
-	background: #383434;
-	text-decoration: none;
+	color: var(--main-color);
 }
 
 .signature {
@@ -142,4 +150,30 @@ font-family: 'Roboto', sans-serif; */
 	text-transform: uppercase;
 	background: #383434;
 	color: var(--adress-color);
+}
+
+.comand-title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.1875;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--dark-color);
+}
+
+.comand-item {
+	font-size: 16px;
+	line-height: 1.1875;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--main-color);
+}
+
+.adress {
+	font-size: 14px;
+	line-height: 1.714;
+	letter-spacing: 0.03em;
+	color: var(--adress-color);
+	background: #383434;
+	text-decoration: none;
 }
