@@ -53,6 +53,7 @@ ul {
 	text-decoration: none;
 }
 
+.active,
 .menu-link:hover,
 .menu-link:focus,
 .contacs-link:hover,
